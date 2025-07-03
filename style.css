@@ -129,6 +129,7 @@ main {
   border-radius: 8px;
 }
 
+/* Contact Form */
 .contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
