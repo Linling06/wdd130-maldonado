@@ -1,0 +1,70 @@
+body {
+    background-color: #FFF3E0;
+    color: #000000;
+    font-family: sans-serif, monospace;
+    margin: 50px;
+}
+
+#header {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100px;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr 4fr;
+}
+
+nav {
+    background-color: #D36E63;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr 5fr 2fr 3fr 3fr;
+}
+
+#link {
+    background-color: #FFF3E0;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    font-size: 25px;
+}
+
+main2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 25px;
+}
+
+thoseLastLittleBitsAtTheBottom {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#textBox {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    border: 3px #000000 solid;
+    font-size: 30px;
+}
