@@ -129,6 +129,34 @@ main {
   border-radius: 8px;
 }
 
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 4rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: .2rem solid black;
+}
+
+.contact-form img {
+  grid-column: 1/2;
+  grid-row: 1/8;
+  justify-self: center;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-form label, input, textarea, button {
+  justify-self: center;
+}
+
+.contact-form button {
+  justify-self: center;
+}
+
 /* Footer */
 footer {
   background-color: #8D6E63;           /* Primary */
