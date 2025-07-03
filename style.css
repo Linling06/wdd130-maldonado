@@ -1,0 +1,139 @@
+/* Base Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background-color: #FFF3E0;           /* Secondary */
+  color: #37474F;                      /* Accent 1 */
+  font-family: sans-serif, monospace;  /* Paragraph Font */
+  line-height: 1.6;
+}
+
+/* Header: vertical stack of branding row + nav */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Branding row: logo and site name in one line at left */
+header .branding {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #FFF3E0;           /* Secondary */
+  padding: 1rem;
+}
+
+header .branding img {
+  max-height: 60px;
+}
+
+header .branding h1 {
+  font-family: cursive, fantasy;       /* Heading Font */
+  color: #37474F;                      /* Accent 1 */
+  font-size: 2.5rem;
+  margin-left: 0.75rem;
+}
+
+/* Navigation bar below branding */
+nav {
+  background-color: #8D6E63;           /* Primary */
+  text-align: center;
+  padding: 0.75rem 0;
+}
+
+nav a {
+  color: #FFF3E0;                      /* Secondary */
+  text-decoration: none;
+  margin: 0 2rem;                      /* increased spacing */
+  font-weight: bold;
+  font-family: cursive, fantasy;       /* Heading Font */
+}
+
+nav a:hover {
+  color: #B0B0B0;                      /* Accent 2 */
+  text-decoration: underline;
+}
+
+/* Main Container */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Welcome Section */
+#welcome {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#welcome h2 {
+  font-family: cursive, fantasy;       /* Heading Font */
+  color: #37474F;                      /* Accent 1 */
+  margin-bottom: 0.5rem;
+}
+
+#welcome p {
+  max-width: 60%;
+}
+
+#welcome img {
+  max-width: 35%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Purpose Section */
+#purpose h2 {
+  font-family: cursive, fantasy;       /* Heading Font */
+  color: #37474F;                      /* Accent 1 */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#purpose p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* Highlights Section */
+#highlights {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+#highlights figure {
+  flex: 1 1 calc(33% - 1rem);
+  margin: 0.5rem;
+  text-align: center;
+}
+
+#highlights img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #8D6E63;           /* Primary */
+  color: #FFF3E0;                      /* Secondary */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
