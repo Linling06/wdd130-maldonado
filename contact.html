@@ -21,11 +21,11 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Contact Us</h2>
+    <main class="contact-main">
+        <h2>Contact Us<br>(Not Really)</h2>
         <h4>NoLytics was founded by a team of overthinkers, underachievers, and one extremely smart otter. Our mission? To sound smart while saying nothing. If you're still reading, congratulations—you're one of us</h4>
-        <p>Have questions? Great! So do we</p>
-        <p>Email us at <a href="">hello@nolytics.com</a> or yell into the unknown- we'll probably hear it</p>
+        <p>Have questions? Great! So do we <br>
+            Email us at <a href="">hello@nolytics.com</a> or yell into the unknown- we'll probably hear it</p>
         
         <!-- Contact Form -->
         <contact class="contact">
@@ -33,14 +33,20 @@
 
                 <img src="images/otter_contact.png" alt="Contact Otter">
                 <!-- Name -->
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name">
+                <name>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </name>
                 <!-- Email -->
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <email>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </email>
                 <!-- Comments -->
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments"></textarea>
+                <message>
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </message>
                 <!-- Submit -->
                 <button type="submit">Send</button>
 
