@@ -202,27 +202,65 @@ name, email, message {
 .contact-form label, input, textarea, button {
   justify-self: center;
   box-sizing: border-box;
+  font-family: sans-serif, monospace;
 }
 
 .contact-form input {
   height: 2rem;
-  width: 13rem;
-  padding: .2rem;
+  width: 20rem;
+  padding: .4rem;
+  background-color: white;
+  color: #37474F;                      /* Accent 1 */
+  border: 2px solid #37474F;           /* Accent 1 */
+  border-radius: 3px;
+  transition: .2s ease-in-out;
+}
+
+.contact-form input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #B0B0B0;   /* Accent 2 */
+}
+
+.contact-form label {
+  font-weight: bold;
 }
 
 .contact-form textarea {
-  height: 5rem;
-  width: 13rem;
-  padding: .2rem;
+  height: 7rem;
+  width: 20rem;
+  padding: .4rem;
   resize: none;
+  background-color: white;
+  color: #37474F;                      /* Accent 1 */
+  border: 2px solid #37474F;           /* Accent 1 */
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: .2s ease-in-out;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid #B0B0B0;           /* Accent 2 */
+  border-radius: 3px;
 }
 
 .contact-form button {
+  background-color: #B0B0B0;          /* Accent 2 */
+  color: #37474F;                      /* Accent 1 */
+  border: .5rem solid #37474F;         /* Accent 1 */
+  font-family: sans-serif, monospace;
   justify-self: center;
   border: none;
   border-radius: 2px;
   padding: .5rem;
   width: 6rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #8D6E63;           /* Primary */
+  color: #FFF3E0;                      /* Secondary */
 }
 
 /* Footer */
