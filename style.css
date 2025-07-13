@@ -25,22 +25,25 @@ header {
 
 /* Branding row: logo and site name in one line at left */
 header .branding {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #FFF3E0;           /* Secondary */
-  padding: 1rem;
+  position: relative;
+  background-color: #FFF3E0;
+  padding: 0; 
+  height: 80px; 
 }
 
 header .branding img {
-  max-height: 60px;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 header .branding h1 {
-  font-family: cursive, fantasy;       /* Heading Font */
-  color: #37474F;                      /* Accent 1 */
+  font-family: cursive, fantasy;
+  color: #37474F;
   font-size: 2.5rem;
-  margin-left: 0.75rem;
+  text-align: center;
 }
 
 /* Navigation bar below branding */
@@ -73,27 +76,42 @@ main {
 /* Welcome Section */
 #welcome {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
-#welcome h2 {
-  font-family: cursive, fantasy;       /* Heading Font */
-  color: #37474F;                      /* Accent 1 */
-  margin-bottom: 0.5rem;
+.welcome-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  gap: 2rem;
 }
 
-#welcome p {
-  max-width: 60%;
+.welcome-text {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.welcome-heading {
+  font-family: cursive, fantasy;
+  font-size: 1.8rem;
+  color: #37474F;
+  margin-bottom: 1rem;
 }
 
 #welcome img {
-  max-width: 35%;
+  max-width: 200px;
   height: auto;
   object-fit: contain;
 }
+
+
+
 
 /* Purpose Section */
 #purpose h2 {
